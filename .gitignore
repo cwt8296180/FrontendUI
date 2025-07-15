@@ -1,32 +1,51 @@
-# Prerequisites
+# 排除关于“前置条件”相关的文件
 *.d
 
-# Compiled Object files
+
+# 排除关于编译生成的目标文件（对象文件）
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
+# 排除预编译头文件，用于加速编译，但它们是特定于本地环境和编译过程的，不应该提交。
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+# 排除编译生成的动态链接库文件。在Linux上是.so，在macOS上是.dylib。
 *.so
 *.dylib
-*.dll
 
-# Fortran module files
+
+# 排除Fortran语言编译生成的模块文件。
 *.mod
 *.smod
 
-# Compiled Static libraries
+# 排除静态链接库文件。在Unix-like系统上是.a，在Windows上是.lib。
 *.lai
 *.la
 *.a
-*.lib
 
-# Executables
+# 排除项
 *.exe
 *.out
 *.app
+*.vsconfig
+*.code-workspace
+*.sln
+*.ignore
+*.log          # 日志文件
+*.tmp          # 临时文件
+Thumbs.db
+.DS_Store     
+
+# 排除文件夹
+/.vs
+/.vscode
+/Binaries
+/DerivedDataCache
+/Intermediate
+/Saved
+/Packahed
+
+*.bkp
